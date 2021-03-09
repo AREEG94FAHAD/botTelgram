@@ -1,1 +1,1 @@
-worker: python resizeImage.py
+web: python resizeImage.py
