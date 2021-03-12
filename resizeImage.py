@@ -8,7 +8,7 @@ import os
 
 
 
-API_TOKEN = '1613485836:AAFSGMb5kMJqeA2X112-2lC01HeuIisimVg'
+API_TOKEN = '---------------------'
 
 bot = telebot.TeleBot(API_TOKEN)
 width=[]
