@@ -128,52 +128,7 @@ def process_send_file(message):
         os.remove(imageName+".jpg")
     except Exception as e:
         bot.reply_to(message, ' another time send photo ok')
-
-
-# def removeImage(message):
-#     try:
-#         os.remove("image.jpg")
-#         bot.reply_to(message, 'thank you')
-#     except Exception as e:
-#         bot.reply_to(message, 'oooops')       
-
-
-    
-    # msg = bot.reply_to(message, 'Thank you if you want to use it again send /start ')
-    # bot.register_next_step_handler(msg, process_end_step)
-
-
-
-    # with open("image.jpg", 'wb') as new_file:
-    #     new_file.write(downloaded_file)
-
-
-# def process_end_step(message):
-#     try:
-#         chat_id = message.chat.id
-#         doc = open('image.jpg', 'rb')
-#         bot.send_document(chat_id, doc)
-#         file_id = 'AAAaaaZZZzzz'
-#         bot.send_document(chat_id, file_id)
-#     except Exception as e:
-#         bot.reply_to(message, 'oooops')
-
-
-
-# def process_height_step(message):
-#     try:
-#         chat_id = message.chat.id
-#         if(message.text=='/stop' or message.text=='/start' ):
-#             msg = bot.reply_to(message, 'Thank you if you want to use it again send /start ')
-#             bot.register_next_step_handler(msg, send_welcome)
-#             return
-#         height = message.text
-#         msg = bot.reply_to(message, ' Please send me the height of picture you want')
-#         bot.register_next_step_handler(msg, process_send_file)
-#     except Exception as e:
-#         bot.reply_to(message, 'oooops')
-
-
+        
 bot.enable_save_next_step_handlers(delay=2)
 
 # Load next_step_handlers from save file (default "./.handlers-saves/step.save")
