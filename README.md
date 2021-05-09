@@ -20,7 +20,7 @@ I recommend working within a virtual environment whenever using Python for proje
 
 #### PIP Dependencies
 
-Once you have your virtual environment setup and running, install dependencies by naviging to the `/backend` directory and running:
+Once you have your virtual environment setup and running, install dependencies by naviging to directory and running:
 
 ```bash
 pip install -r requirements.txt
@@ -30,7 +30,7 @@ This will install all of the required packages we selected within the `requireme
 
 ## Running the server
 
-- To run the server in linux os, execute:
+- To run the server, execute:
 
 ```
 python resizeImage.py
